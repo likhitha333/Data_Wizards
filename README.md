@@ -6,7 +6,7 @@ The objective of the project is to create a modern day smartphone software that 
 
 * [Likhithasree Kommineni](https://github.com/likhitha333/CIS641-HW2-Kommineni) (Developing Backend, Managing Git)
 * [Yaswanth Naga Babu Kommineni](https://github.com/KommineniYaswanth/CIS641-HW2-kommineni) (Frontend Development, Project Lifecycle Management)
-* Member 3 (Role 5, Role 6)
+* [Srinija Reddy Kotla](https://github.com/Srinija-Reddy/CIS641-HW2-Kotlas) (System Design, Documentation)
 
 ## Prerequisites
 Smartphone
