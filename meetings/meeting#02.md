@@ -8,11 +8,13 @@ Date: Sep 27 2024
 
 Time: 10:00 AM
 
-Discussion points: 
+### Discussion points: 
 
 * Review documentation and finalize the project proposal.
 * Discuss the technologies to be used (HTML, CSS, JS, Python, GitHub, MongoDB).
 * Plan initial setup for project development.
+
+### Goals for next week:
 
 * **Likhithasree Kommineni**: 
   - Set up the backend structure using Python or Java.
