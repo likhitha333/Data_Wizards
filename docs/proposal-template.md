@@ -4,9 +4,9 @@ Team members: Likhithasree Kommineni, Yaswanth Naga Babu Kommineni, Srinija Redd
 
 # Introduction
 
-The project aims to create a modern-day smartphone application designed to help users maintain hydration. Through a simple and user-friendly interface, users can track their daily water consumption, set customizable goals for water intake, and receive timely push reminders throughout the day. The app will seamlessly integrate with popular health-tracking applications and smartwatches, offering users a complete view of their hydration habits.
+The project's goal is to develop a cutting-edge smartphone software that assists users in staying hydrated. Users may establish customizable goals for water intake, measure their daily water consumption, and receive frequent push reminders throughout the day thanks to an easy-to-use UI. The software will give users a comprehensive picture of their hydration patterns by effortlessly integrating with well-known health-tracking programs and smartwatches.
 
-Using data analytics, the app will monitor users' hydration patterns and provide personalized recommendations to promote consistent water intake. This personalized feedback will help users make healthier lifestyle choices and ensure they stay hydrated, contributing to overall well-being.
+The software will track its users' patterns of hydration and offer tailored recommendations to encourage regular water consumption through data analytics. Users' general well-being will be enhanced by these tailored comments, which will encourage them to lead better lifestyles and drink enough of water.
 
 # Anticipated Technologies
 
@@ -18,11 +18,11 @@ Using data analytics, the app will monitor users' hydration patterns and provide
 # Method/Approach
 
 1. **Requirements Gathering**:
-   - Define the key features of the app, such as water intake tracking, goal setting, and push notifications.
+   - Setting the key features of the app, such as water intake tracking, goal setting, and push notifications.
    - Conduct research to understand user preferences for hydration reminders.
 
 2. **Front-End Development**:
-   - Design a clean and easy-to-use interface where users can log their water intake and view their progress.
+   - Design a easy-to-use interface where users can log their water intake and view their progress.
    - Implement this interface using HTML, CSS, and JavaScript if a web component is involved.
 
 3. **Back-End Development**:
