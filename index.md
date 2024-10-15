@@ -14,5 +14,4 @@ The objective of the project is to create a modern day smartphone software that 
 ## Document Links
 - [Project Proposal](docs/proposal-template.md)
 - [SRS Document](docs/software_requirements_specification.md)
-
-
+- [Use cases and activity diagrams](docs/IC2.pdf)
