@@ -14,4 +14,4 @@ Laptop
 ## Run Instructions
 * Git clone https://github.com/likhitha333/GVSU-CIS641-Data-Wizards
 * pip install -r requirements.txt
-* flask run
+* python app.py
