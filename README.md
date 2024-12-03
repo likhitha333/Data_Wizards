@@ -9,6 +9,9 @@ The objective of the project is to create a modern day smartphone software that 
 * [Srinija Reddy Kotla](https://github.com/Srinija-Reddy/CIS641-HW2-Kotlas) (System Design, Documentation)
 
 ## Prerequisites
-Smartphone
+Laptop
 
 ## Run Instructions
+* Git clone https://github.com/likhitha333/GVSU-CIS641-Data-Wizards
+* pip install -r requirements.txt
+* flask run
