@@ -1,0 +1,266 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d6f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+
+/* Header Styles */
+header {
+    background-color: #00b8e6;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust space between elements */
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    flex-grow: 1; /* Allow the title to take up available space */
+    text-align: center;
+}
+
+.header-nav {
+    margin-left: auto; /* Pushes the buttons to the right */
+    display: flex;
+    gap: 1em;
+}
+
+.button {
+    padding: 0.5em 1em;
+    background-color: #33cccc;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 110px; 
+    height: 40px; 
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: #29a3a3;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer {
+    background-color: #00b8e6;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%; /* Ensures it spans the page */
+    max-width: 100%; /* Removes restrictions */
+}
+
+
+/* General Form Styles */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Ensures the form has enough width */
+    min-width: 400px; /* Prevents the form from shrinking too much */
+    width: 100%; /* Takes available space within the parent */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #b2ebf2;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0288d1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0277bd;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Notification Bar */
+.notification-bar {
+    display: none;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 1rem;
+}
+
+.notification-bar.show {
+    display: block;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Account Details */
+.account-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+}
+
+.account-details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Forgot Password Section */
+#forgotPasswordForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#forgotPasswordForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#forgotPasswordForm button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#forgotPasswordForm button:hover {
+    background-color: #0277bd;
+}
+
+/* Styling for the FAQ section container */
+.help-content {
+    max-width: 800px; /* Set a container width for readability */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    text-align: left; /* Force text alignment to the left */
+    position: relative; /* Keep content positioned normally */
+    top: 0; /* Ensure no offset from the top */
+}
+
+/* Styling for questions (h3) */
+.help-content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007bff; /* Optional: Customize color for questions */
+}
+
+/* Styling for answers (p) */
+.help-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Add spacing below answers */
+    color: #333;
+    text-align: left; /* Force individual answers to align left */
+}
+
+/* Add space between questions and answers */
+.help-content p + h3 {
+    margin-top: 30px; /* Add spacing above the next question */
+}
+
+

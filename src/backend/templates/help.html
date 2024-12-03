@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/home.css">
+    <title>Help - AquaSync</title>
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <img src="{{ url_for('static', filename='img/water-logo.png') }}" alt="Water Logo" class="logo">
+        <h1>Help and Support</h1>
+        <button class="button" onclick="window.history.back();">Back</button>
+    </div>
+</header>
+
+    <main>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <div class="help-content">
+                <h3>How do I sign up?</h3>
+                <p>Click on the "Sign Up" button on the home page and fill out the form with your details.</p>
+
+                <h3>How do I log in?</h3>
+                <p>Click on the "Login" button and enter your registered email and password.</p>
+
+                <h3>What should I do if I forget my password?</h3>
+                <p>Click on the "Forget Password?" link on the login page and follow the instructions to reset your password.</p>
+
+                <h3>How do I track my water intake?</h3>
+                <p>Log in to your account and navigate to the home page. Use the "Log Your Water Intake" section to enter your daily intake.</p>
+
+                <h3>How do I update my account information?</h3>
+                <p>Go to the "Account" page to view and update your personal details.</p>
+            </div>
+        </section>
+
+        <section class="help-content">
+            <h2>Contact Us</h2>
+            <p>If you need further assistance, please email us at <a href="mailto:support@aquasync.com">support@aquasync.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AquaSync. All rights reserved.</p>
+    </footer>
+</body>
+</html>

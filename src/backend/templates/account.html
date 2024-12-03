@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/home.css">
+    <title>Account Information - AquaSync</title>
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <div class="header-container">
+            <img src="static/img/water-logo.png" alt="Water Logo" class="logo">
+            <h1>AquaSync</h1>
+            <nav class="header-nav">
+                <a href="/index" class="button">Home</a>
+                <a href="/login" class="button">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="accountSection">
+            <h2>Your Account Information</h2>
+            <div class="account-details">
+                <p><strong>First Name:</strong> {{ user.firstName }}</p>
+                <p><strong>Last Name:</strong> {{ user.lastName }}</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AquaSync. All rights reserved.</p>
+    </footer>
+</body>
+</html>

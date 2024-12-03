@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/home.css">
+    <title>Water Intake Tracker</title>
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+    <img src="static/img/water-logo.png" alt="Water Logo" class="logo">
+    <h1>AquaSync</h1>
+    <div class="header-nav">
+        <a href="/login" class="button">Logout</a>
+        <a href="/account" class="button">Account</a>
+    </div>
+   </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Daily Goal Section -->
+		<section id="goalSection">
+		    <h2>Set Your Daily Water Intake Goal</h2>
+		    <form id="goalForm">
+		        <label for="dailyGoal">Daily Goal (ml):</label>
+		        <input type="number" id="dailyGoal" name="dailyGoal" placeholder="e.g., 2000" required>
+		        <button type="submit">Set Goal</button>
+		    </form>
+		</section>
+		
+		<!-- Water Intake Form -->
+		<section id="intakeSection">
+		    <h2>Log Your Water Intake</h2>
+		    <form id="waterForm">
+		        <label for="waterAmount">Water Amount (ml):</label>
+		        <input type="number" id="waterAmount" name="waterAmount" placeholder="e.g., 250" required>
+		        <button type="submit">Add Water Intake</button>
+		    </form>
+		</section>
+		
+        <!-- Notifications Area -->
+        <section id="notificationArea">
+            <p id="notificationMessage">Keep going! Reach your daily goal.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AquaSync. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/home_scripts.js">
+    </script>
+    
+</body>
+</html>
