@@ -17,4 +17,5 @@ Laptop
 * pip install -r requirements.txt
 * Navigate to Backend folder
 * python3 app.py
+* Run this command if you are unable to connect mongoDb or getting session timeout error: brew services start mongodb/brew/mongodb-community@6.0 
   
