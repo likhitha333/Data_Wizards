@@ -13,5 +13,8 @@ Laptop
 
 ## Run Instructions
 * Git clone https://github.com/likhitha333/GVSU-CIS641-Data-Wizards
+* To install python in macOS: brew install python3 
 * pip install -r requirements.txt
-* python app.py
+* Navigate to Backend folder
+* python3 app.py
+  
