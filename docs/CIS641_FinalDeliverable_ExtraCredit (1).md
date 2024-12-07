@@ -130,11 +130,15 @@ This document covers the core functionality of our web application, such as user
 
 #### Scalability
 
+| ID   | Requirement                                       |
+|------|---------------------------------------------------|
 | NFR22| Ensure the application can handle at least 100 concurrent users without performance degradation.|
 | NFR23| Design the database schema to accommodate future extensions, such as additional user attributes or hydration metrics.|
 
 #### Reliability
 
+| ID   | Requirement                                       |
+|------|---------------------------------------------------|
 | NFR24| Ensure that the application uptime is at least 99.5% to provide consistent service availability.|
 | NFR25| Implement logging mechanisms to capture errors and monitor system health for debugging purposes.|
 
