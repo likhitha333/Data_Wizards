@@ -1,11 +1,12 @@
-
-# Software Requirements Specification (Final)
+ # Software Requirements Specification (Final)
 
 ## Overview
 
-This document covers the core functionality of our web application, such as user authentication, water intake tracking, password recovery, and notifications, along with the non-functional requirements like performance, usability, security, etc.
+This document covers the core functionality of our web application such as user authentication, water intake tracking, password recovery and notifications along with the non-functional requirements like performance, usability, security, etc.
 
 ## Software Requirements
+
+The key functional and non-functional requirements for the AquaSync application are listed in the Software Requirements section. These features, which guarantee the program meets user needs, include user authentication, water intake tracking, email notifications, and performance benchmarks.
 
 ### Functional Requirements
 
@@ -144,76 +145,122 @@ This document covers the core functionality of our web application, such as user
 
 ## Change Management Plan
 
-### **Purpose**
+### **Training Plan**
 
-The purpose of the change management plan is to ensure that all changes to the project requirements, scope, or implementation are documented, reviewed, and approved in a controlled manner to maintain the integrity of the project.
+#### **Objective**:
 
-### **Steps for Managing Changes**
+Ensure all users understand and can effectively use the application to log and track daily water intake and manage their hydration goals.
 
-1. **Submission of Change Request**:
-   - Team members or stakeholders submit a formal change request describing the required modifications.
-   - The change request should include:
-     - Description of the change.
-     - Rationale for the change.
-     - Impact of the change on current requirements or system components.
+#### **Training Methods**
 
-2. **Impact Analysis**:
-   - Assess the impact of the proposed change on:
-     - Functional and non-functional requirements.
-     - Existing artifacts (e.g., diagrams, documents, code).
-     - Project timeline and resources.
+**Interactive Workshops**:
+Conduct virtual or in-person sessions where users can learn and practice using the application features, such as logging water intake and setting goals.
 
-3. **Approval Process**:
-   - The change request is reviewed by the project team and stakeholders.
-   - Based on the analysis, the team will decide whether to:
-     - Approve the change.
-     - Reject the change.
-     - Postpone the change for future phases.
+**User Guide**:
+Provide a detailed digital manual with step-by-step instructions and annotated screenshots for key features like signup, login, and water intake tracking. We have already provided one help tab in our website for user guide.
 
-4. **Implementation and Testing**:
-   - If approved, the change is implemented by the development team.
-   - Ensure that appropriate testing is conducted to verify that the change does not introduce defects.
+**Video Tutorials**:
+Create short, targeted videos demonstrating core functionalities, such as setting daily water goals, viewing progress, and understanding notifications.
 
-5. **Documentation Updates**:
-   - Update all relevant artifacts, including:
-     - Software requirements specification (SRS).
-     - Design diagrams (use case, class, etc.).
-     - Traceability matrices.
+**Below are the list of topics that covers during training**
+- Topics Covered
+- User Authentication and Password Recovery
+- Navigating the Dashboard and Hydration Progress
+- Setting and Managing Water Intake Goals
+- Logging Water Intake
+- Notifications for Goal Progress
+- Understanding Optional Features (e.g., hydration reminders via email)
 
-6. **Communication**:
-   - Notify all team members and stakeholders about the approved change and its implementation.
+### **Integration with Existing Ecosystem / Software**
+
+#### **Steps to Integrate**
+
+**Compatibility Testing**
+- The application has been tested to work seamlessly on all major browsers including Chrome, Firefox, Safari and Edge.
+- Usability has been verified across various devices such as desktops, tablets and smartphones.
+- Functionality has been ensured on common operating systems like Windows, macOS and Linux.
+
+**Database and Data Handling**
+- MongoDB has been utilized to securely store user data, including water intake logs and hydration goals.
+- Data consistency and reliability have been ensured through robust backend operations.
+
+**User Authentication and Notifications**
+- User accounts are secured with encrypted passwords using Flask’s built-in security and encryption tools.
+- Personalized hydration reminders are sent via email using SMTP integration.
+- Notifications are scheduled to encourage users to meet their hydration goals throughout the day.
+
+**Future Improvements**
+The application is designed to expand easily, allowing potential integration with external health tracking devices or APIs for more comprehensive functionality.
+
+### **Issue Resolution and Support Plan**
+
+#### **Objective**:
+
+Ensure timely identification, reporting, and resolution of any issues to maintain smooth operations of the Water Intake Tracking Application.
+
+**Support Channels**:
+- Dedicated Support Email: Provide a support email address where users can report issues or request assistance.
+- In-App Feedback Form: Allow users to report problems directly within the application through a feedback form.
+
+**Issue Resolution Process**:
+- Continuous Monitoring: Use Flask logs and backend monitoring tools to track system performance and proactively identify potential issues before they affect users.
+- Bug Reporting and Fixing: Users can report issues through the in-app feedback form or support email.
+Reported bugs are triaged based on severity and addressed promptly.
+- Software Updates: Regularly release updates to resolve bugs, enhance application performance, and introduce new features. Also, notify users in advance of upcoming updates and provide release notes detailing significant changes or improvements.
+- Documentation Updates: Maintain up-to-date user guides and FAQs, reflecting changes introduced in software updates to assist users with any new features or functionality.
+
 
 ## Traceability Links
 
 ### Use Case Diagram Traceability
 
-| Artifact ID  | Artifact Name             | Requirement ID      |
-|--------------|---------------------------|---------------------|
-| UseCase1     | Send Notification Emails  | FR1, FR3, NFR3      |
-| UseCase2     | User Account Management   | FR6, FR7, NFR4, FR10|
-| UseCase3     | Log Hydration Data        | FR11, FR12, NFR4    |
-| UseCase4     | Generate Analytics Reports| FR16, FR18, NFR9    |
+| Artifact ID    | Artifact Name                      | Requirement ID                 |                        
+|---------------------|--------------------------------------------------------|-------------------------------------------------|
+| UseCase1     | Send Notification Emails             | FR21, FR22, NFR6, NFR12         |              
+| UseCase2     | User Account Management           | FR6, FR7, FR11, FR13, NFR4, NFR6  |
+| UseCase3     | Log Hydration Data                 | FR15, FR16, FR18, FR19, NFR4, NFR12|      
+| UseCase4     | Password Recovery                  | FR25, FR26, FR28, FR29, NFR7, NFR10 |
+| UseCase5     | Validate Form Inputs                | FR30, FR31, FR33, NFR3, NFR4       |
+| UseCase6     | Schedule Hydration Reminders       | FR34, FR35, NFR6, NFR12           |
+| UseCase7     | Display User Hydration Progress      | FR17, FR20, NFR1, NFR5           |
+| UseCase8     | Manage Notifications               | FR23, FR24, NFR1, NFR8           | 
+
 
 ### Class Diagram Traceability
 
-| Artifact Name           | Requirement ID      |
-|--------------------------|---------------------|
-| UserNotificationService  | FR1, FR2, FR3, NFR1|
-| UserAccountManagement    | FR6, FR7, FR9, NFR4|
-| HydrationLog            | FR11, FR12, NFR5   |
-| AnalyticsService        | FR16, FR19, NFR8   |
+| Artifact Name           | Requirement ID                            |
+|-------------------------------------|-------------------------------------------------------------------|
+| UserNotificationService   | FR21, FR22, FR23, FR24, NFR6, NFR12         |
+| UserAccountManagement  | FR6, FR7, FR11, FR13, NFR4, NFR6           |
+| HydrationLog           | FR15, FR16, FR17, FR18, FR19, NFR4, NFR12    |
+| PasswordRecoveryService  | FR25, FR26, FR28, FR29, NFR7, NFR10         |
+| FormValidationService    | FR30, FR31, FR33, NFR3, NFR4               |
+| NotificationScheduler     | FR34, FR35, NFR6, NFR12                   |
+| ProgressTrackingService   | FR17, FR20, NFR1, NFR5                    |
+
+### Activity Diagram Traceability
+
+| Artifact Name                  | Requirement ID                      |
+|-------------------------------------------------|---------------------------------------------------------|
+| Login and Signup Workflow       | FR6, FR7, FR9, FR13, NFR4, NFR6       |
+| Password Recovery Process        | FR25, FR26, FR28, FR29, NFR7, NFR10   |
+| Hydration Logging Activity        | FR15, FR16, FR18, FR19, NFR4, NFR12   |
+| Notification Scheduling Flow      | FR21, FR22, FR34, FR35, NFR6, NFR12   |
+| Progress Tracking Activity        | FR17, FR20, NFR1, NFR5               |
+| Form Validation Workflow        | FR30, FR31, FR33, NFR3, NFR4         |
+| Data Synchronization Workflow   | FR11, FR12, NFR5, NFR12              |
 
 ## Software Artifacts
 
 - [Mid Term SRS Document](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/software_requirements_specification.md)
-- [System Request](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/IC1-SAD%202.pdf)
-- [Use Case Diagram and Activity Diagram](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/IC2.pdf)
-- [CRC Card, Class and Object Diagram](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/CIS%20641%20IC3.docx)
-- [State Machine and Sequence Diagram](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/CIS%20641%20IC4.docx)
-- [Class Specification](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/IC5%20-%20Class%20Specification.pdf)
-- [Windows Nav Diagram](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/Ic6.pdf)
+- [System Request](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/artifacts/IC1%20System%20Rquest.pdf)
+- [Use Case Diagram and Activity Diagram](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/artifacts/IC2%20Use%20Case%20Diagrams%20%2B%20Activity%20Diagrams.pdf)
+- [CRC Card, Class and Object Diagram](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/artifacts/IC3%20CRC%20%2B%20Class%20%2B%20Object%20Models.docx)
+- [State Machine and Sequence Diagram](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/artifacts/IC4%20Sequence%20%2B%20State%20Diagrams.docx)
+- [Class Specification](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/artifacts/IC5%20-%20Class%20Specification.pdf)
+- [Windows Nav Diagram](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/artifacts/IC6%20Windows%20Nav%20Diagrams.pdf)
 - [Proposal Document](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/proposal-template.md)
-- [Midterm SRS](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/software_requirements_specification.md)
+- [Final SRS](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/docs/software_requirements_specification_final.md)
 - [Project README](https://github.com/likhitha333/GVSU-CIS641-Data-Wizards/blob/main/README.md)
 
 ## Installation Instructions
@@ -241,4 +288,3 @@ The purpose of the change management plan is to ensure that all changes to the p
     ```bash
     Python3 app.py
     ```
-
